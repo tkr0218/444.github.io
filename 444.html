@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>444</title>
+  <title>💓💓💓</title>
   <meta charset="UTF-8">
 </head>
 <body>
@@ -9,49 +9,50 @@
     　　<script>
             var a=2
             var b=2
+            var e=["😗","😘","😍","🥰","💓"]
             var c=[[1,3,3,1],[4,4,4,4],[4,3,1,2],[1,2,4,3]]
             var d=0
             var check=[1,2,3,4]
             check=JSON.stringify(check);
-            document.getElementById("black_txt").textContent =c[a][b];
+            document.getElementById("black_txt").textContent =e[c[a][b]];
             function reset(){
               a=2;
               b=2;
               c=[[1,3,3,1],[4,4,4,4],[4,3,1,2],[1,2,4,3]]
               d=0;
-              document.getElementById("black_txt").textContent =c[a][b];
-              document.getElementById("green_txt").textContent =d+1;
-              document.getElementById("left_txt").textContent=2;
-              document.getElementById("middle_txt").textContent=0;
-              document.getElementById("right_txt").textContent=2;
+              document.getElementById("black_txt").textContent =e[c[a][b]];
+              document.getElementById("green_txt").textContent =e[d];
+              document.getElementById("left_txt").textContent=e[2];
+              document.getElementById("middle_txt").textContent=e[0];
+              document.getElementById("right_txt").textContent=e[2];
             }
             function down(){
                  d+=1;
                  d%=4;
-                 document.getElementById("green_txt").textContent =d+1;
+                 document.getElementById("green_txt").textContent =e[d];
                  if (a<3) a+=1;
-                 document.getElementById("black_txt").textContent =c[a][b];
+                 document.getElementById("black_txt").textContent =e[c[a][b]];
             }
             function up(){
                  d+=1;
                  d%=4;
-                 document.getElementById("green_txt").textContent =d+1;
+                 document.getElementById("green_txt").textContent =e[d];
                  if (a>0) a-=1;
-                 document.getElementById("black_txt").textContent =c[a][b];
+                 document.getElementById("black_txt").textContent =e[c[a][b]];
             }
             function left(){
                  d+=1;
                  d%=4;
-                 document.getElementById("green_txt").textContent =d+1;
+                 document.getElementById("green_txt").textContent =e[d];
                  if (b>0) b-=1;
-                 document.getElementById("black_txt").textContent =c[a][b];
+                 document.getElementById("black_txt").textContent =e[c[a][b]];
             }
             function right(){
                  d+=1;
                  d%=4;
-                 document.getElementById("green_txt").textContent =d+1;
+                 document.getElementById("green_txt").textContent =e[d];
                  if (b<3) b+=1;
-                 document.getElementById("black_txt").textContent =c[a][b];
+                 document.getElementById("black_txt").textContent =e[c[a][b]];
             }
             function leftword(){
               var l=[0,2];
@@ -91,7 +92,7 @@
             }
             function touch(){
                  if (d==0){
-                var a1=[4,3,2,1]
+                 var a1=[4,3,2,1]
                  c[a][b]=a1[c[a][b]-1]
                  c[(a-1)%4][b]=a1[c[(a-1)%4][b]-1]
                  c[a][(b-1)%4]=a1[c[a][(b-1)%4]-1];
@@ -115,28 +116,28 @@
                  var a4=[3,2,1,4]
                  c[a][b]=a4[c[a][b]-1];
                  c[(a-1)%4][b]=a4[c[(a-1)%4][b]-1];
-                 c[a][(b+1)%4]=a4[c[a][(b-1)%4]-1];
+                 c[a][(b-1)%4]=a4[c[a][(b-1)%4]-1];
                  c[(a-1)%4][(b-1)%4]=a4[c[(a-1)%4][(b-1)%4]-1];
                  }
-                 document.getElementById("black_txt").textContent =c[a][b];
+                 document.getElementById("black_txt").textContent =e[c[a][b]];
                  var le=leftword();
                  var mi=middleword();
                  var ri=rightword();
-                 document.getElementById("left_txt").textContent=le;
-                 document.getElementById("middle_txt").textContent=mi;
-                 document.getElementById("right_txt").textContent=ri;
+                 document.getElementById("left_txt").textContent=e[le];
+                 document.getElementById("middle_txt").textContent=e[mi];
+                 document.getElementById("right_txt").textContent=e[ri];
                  if(le==4&mi==4&ri==4){
-                   alert("Password:suudoku");
+                   alert("Password:dokushinn");
                  }
 
             }
         </script>
-        <text x="260" y="0" text-anchor="middle" font-size="60"
-              cursor="default" id="left_txt">2</text>
+        <text x="230" y="0" text-anchor="middle" font-size="60"
+              cursor="default" id="left_txt">😍</text>
         <text x="300" y="0" text-anchor="middle" font-size="60"
-              cursor="default" id="middle_txt">0</text>
-        <text x="340" y="0" text-anchor="middle" font-size="60"
-              cursor="default" id="right_txt">2</text>
+              cursor="default" id="middle_txt">😗</text>
+        <text x="370" y="0" text-anchor="middle" font-size="60"
+              cursor="default" id="right_txt">😍</text>
         <rect x="200" y="200" width="50" height="50" fill="#EEEAAA" onclick="up()" stroke="black"
               >
         </rect>
@@ -152,18 +153,18 @@
         <rect x="200" y="250" width="200" height="50" fill="#EEAAAA" onclick="touch()" stroke="black"
               >
         </rect>
-        <rect x="260" y="330" width="80" height="50" fill="#EEEEAA" onclick="reset()" stroke="black"
+        <rect x="190" y="330" width="220" height="50" fill="#EEEEAA" onclick="reset()" stroke="black"
               >
         </rect>
         <rect x="275" y="80" width="50" height="50" stroke="black" fill="#FFFFFF"/>
         <text x="300" y="115" text-anchor="middle" font-size="30" fill="black" id="black_txt"
-            cursor="default">1</text>
+            cursor="default">😘</text>
         <rect x="100" y="220" width="50" height="50" stroke="black" fill="#FFFFFF"/>
         <text x="125" y="255" text-anchor="middle" font-size="30" fill="green" id="green_txt"
-            cursor="default">1</text>
+            cursor="default">😘</text>
         <text x="300" y="363" text-anchor="middle" font-size="20" fill="black" onclick="reset()"
             cursor="default">
-            リセット
+            リセットするのかな❗❓
         </text>
   </svg>
 </body>
